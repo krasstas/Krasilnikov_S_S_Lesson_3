@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск</title>
+    <style>
+        body {
+            background: url(images/hyper_cars/lotus_evia.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    <h1 align="center"><strong>Продажа и покупка авто в Украине</strong></h1>
+
+    <h2 align="left"><strong>Поиск по категориям</strong></h2>
+
+    <form action="https://fom.in.ua/echo" method="GET">
+    <strong>Тип топлива:</strong><select name="fuel type">
+            <option>------------</option>
+            <option>Бензин</option>
+            <option>Газ</option>
+            <option>Дизель</option>
+    </select>
+    <strong>КПП:</strong><select name="gearbox type">
+            <option>------------</option>
+            <option>Автомат</option>
+            <option>Механика</option>
+    </select>
+        <label><input type="reset" name="reset" value="Сброс"></label>
+        <label><input type="submit" name="choose" value="Выбрать"></label>
+    <fieldset style="background-color: rgb(141, 140, 140); opacity: 0.7;">
+        <legend><strong>Тип кузова:</strong></legend>
+        <label><input type="radio" name="body_type" value="sedan">Седан</label>
+        <label><input type="radio" name="body_type" value="hatchback">Хетчбэк</label>
+        <label><input type="radio" name="body_type" value="universal">Универсал</label>
+        <label><input type="radio" name="body_type" value="cabriolet">Кабриолет</label>
+        <label><input type="radio" name="body_type" value="SUV/crossover">Внедорожник/Кроссовер</label>
+        <label><input type="radio" name="body_type" value="SUV pickup">Внедорожник-пикап</label>
+        <label><input type="radio" name="body_type" value="minivan">Минивэн</label>
+        <label><input type="radio" name="body_type" value="minibus passenger">Микроавтобус пассажир</label>
+        <label><input type="radio" name="body_type" value="Cargo minibus">Микроавтобус грузовой</label>
+        <label><input type="radio" name="body_type" value="bus">Автобус</label>
+    </fieldset>
+    <fieldset style="background-color: rgb(141, 140, 140); opacity: 0.7;">
+        <legend><strong>Состояние:</strong></legend>
+            <label><input type="checkbox" name="body_condition[]" value="New">Новые - из автосалона</label>
+            <label><input type="checkbox" name="body_condition[]" value="used">Б/У - не требует вложений</label>
+            <label><input type="checkbox" name="body_condition[]" value="needs repair">Требует ремонта</label>
+            <label><input type="checkbox" name="body_condition[]" value="after the accident">После ДТП</label>
+            <label><input type="checkbox" name="body_condition[]" value="for parts">На запчасти</label>
+            <label><input type="checkbox" name="body_condition[]" value="uncleared">Нерастаможенные</label>
+            <label><input type="checkbox" name="body_condition[]" value="problematic documents">Проблемные документы</label>
+        </fieldset>
+        <fieldset style="background-color: rgb(141, 140, 140); opacity: 0.7;">
+            <legend><strong>Комфорт:</strong></legend>
+            <label><input type="checkbox" name="comfort[]" value="air conditioner">Кондиционер</label>
+            <label><input type="checkbox" name="comfort[]" value="leather">Кожа</label>
+            <label><input type="checkbox" name="comfort[]" value="luke">Люк</label>
+            <label><input type="checkbox" name="comfort[]" value="audio system">Аудио система</label>
+            <label><input type="checkbox" name="comfort[]" value="touchscreen">Сенсорный дисплей</label>
+            <label><input type="checkbox" name="comfort[]" value="heated seats">Подогрев сидений</label>
+    </fieldset>
+    <fieldset style="background-color: rgb(141, 140, 140); opacity: 0.7;">
+        <legend><strong>Марка авто:</strong></legend>
+        <select name="car brand">
+            <option>Выбрать марку</option>
+            <option>Любая</option>
+            <optgroup label="Япония">
+                <option>Toyota</option>
+                <option>Nissan</option>
+                <option>Honda</option>
+                <option>Lexus</option>
+            </optgroup>
+                <optgroup label="Германия">
+                    <option>BMW</option>
+                    <option>Mercedes</option>
+                    <option>Opel</option>
+                    <option>Wolksvagen</option>
+                </optgroup>
+            <optgroup label="Америка">
+                <option>Chevrolet</option>
+                <option>Ford</option>
+                <option>Tesla Motors</option>
+                <option>Chrysler</option>
+                <option>Cadillac</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <fieldset style="background-color: rgb(141, 140, 140); opacity: 0.7;">
+        <legend><strong>Цвет авто:</strong></legend>
+        <select name="color">
+            <option>Выбрать цвет</option>
+            <option>Любой</option>
+            <option style="color: rgb(253, 225, 132)">Белый</option>
+            <option style="color: rgb(72, 189, 243)">Голубой</option>
+            <option style="color: green">Зеленый</option>
+            <option style="color: blue">Синий</option>
+            <option style="color: red">Красный</option>
+            <option style="color: yellow">Жёлтый</option>
+            <option style="color: orangered">Оранжевый</option>
+            <option style="color: pink">Розовый</option>
+            <option style="color: crimson">Малиновый</option>
+            <option style="color: brown">Коричневый</option>
+            <option style="color: grey">Серый</option>
+            <option style="color: black">Черный</option>
+        </select>
+    </fieldset>
+    <fieldset style="background-color: rgb(141, 140, 140); opacity: 0.7;">
+        <legend><strong>Цена $ (от и до)</strong></legend>
+        <label for="price">500</label>
+            <input type="range" id="price" name="price" min="500" max="100000"
+                                            value="10000" step="100">
+            <label for="price">100000</label>
+    </fieldset>
+    <fieldset style="background-color: rgb(141, 140, 140); opacity: 0.7;">
+        <legend><strong>Дата выпуска:</strong></legend>
+            <label for="datemax">Не раньше:</label>
+            <input type="date" id="datemax" name="datemax" max="1980-01-01">
+            <label for="datemin">Не позже:</label>
+            <input type="date" id="datemin" name="datemin" min="2022-02-28">
+    </fieldset>
+    </form>
+    </div>
+</body>
+</html>

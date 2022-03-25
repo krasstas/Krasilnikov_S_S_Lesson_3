@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>authorisation</title>
+    <style>
+        body {
+            background: url(images/hyper_cars/la_ferrari.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center"><strong>Продажа и покупка авто в Украине</strong></h1>
+
+    <h2 align="left"><strong>Вход</strong></h2>
+
+    <form action="https://fom.in.ua/echo" method="POST">
+    <label>
+       Логин: <input type="text" name="login" placeholder="example@example.com">
+    </label>
+    <label>
+       Пароль: <input type="password" name="password" placeholder="введите свой пароль">
+    </label>
+     <label><input type="checkbox" name="save_password" value="Сохранить_пароль">Сохранить пароль</label>
+     <label>
+         <input type="submit" name="log in" value="Войти">
+        </label>
+    </form>
+</body>
+</html>
